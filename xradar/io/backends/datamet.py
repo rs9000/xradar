@@ -77,6 +77,22 @@ datamet_mapping = {
     "ClutterMask": "CPA"
 }
 
+xradar_mapping = {
+    "DBTH": "DBTH",
+    "DBZH": "reflectivity",
+    "VRADH": "velocity",
+    "WRADH": "spectrum_width",
+    "ZDR": "differential_reflectivity",
+    "UKDP": "UKDP",
+    "KDP": "KDP",
+    "PHIDP": "differential_phase",
+    "SQIH": "SQIH",
+    "SNR": "SNR",
+    "RHOHV": "cross_correlation_ratio",
+    "Quality": "QIND",
+    "CPA": "CPA"
+}
+
 import os
 from PIL import Image
 
