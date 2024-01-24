@@ -242,6 +242,9 @@ class _DatametReader:
         if not os.path.exists(pathname):
             pathname = os.path.join(path, filename.upper())
         if not os.path.exists(pathname):
+            filename, ext = filename.split(".")
+            pathname = os.path.join(path, filename + "." + ext.lower())
+        if not os.path.exists(pathname):
             return None
         val_array = np.loadtxt(pathname)
         return val_array
